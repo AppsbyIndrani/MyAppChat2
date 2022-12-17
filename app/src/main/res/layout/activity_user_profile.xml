@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".UserProfileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:id="@+id/userprorelativelayout"
+            android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameimagelayout"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/coverprofilepicture"
+                android:adjustViewBounds="true"
+                android:alpha="0.01"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitXY"
+                android:src="@color/colorPrimary"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="283dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="60dp"
+                android:gravity="center"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/userprofile">
+
+
+
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/userprofileimage"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/profile_image"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+                <TextView
+                    android:id="@+id/userproname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="gghhhhh"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cutive"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/userstatustext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/corben"
+                    android:text="the ghhj jjj ob"
+                    android:textSize="14sp" />
+
+                </HorizontalScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+
+        </RelativeLayout>
+
+            <View
+                android:id="@+id/userproview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/userprorelativelayout"
+                android:layout_marginTop="3dp"
+                android:background="@color/grey" />
+
+
+            <TextView
+                android:id="@+id/calltext"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/userproview"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="25dp"
+                android:text="Call"
+                android:textColor="?attr/textcolor"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/callimg"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/userproview"
+                android:layout_marginStart="316dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/call" />
+
+            <View
+                android:id="@+id/callview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/calltext"
+                android:layout_marginTop="3dp"
+                android:background="@color/grey" />
+
+
+            <TextView
+                android:id="@+id/videotext"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/callview"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="20dp"
+                android:text="Video call"
+                android:textColor="?attr/textcolor"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/videoview"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/callview"
+                android:layout_marginStart="316dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/videocall1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/videotext"
+                android:layout_marginTop="3dp"
+                android:background="@color/grey"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

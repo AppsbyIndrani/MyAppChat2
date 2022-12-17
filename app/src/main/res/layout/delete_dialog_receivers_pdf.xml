@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delmepdfreciever"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/statusdelete"
+       android:layout_gravity="right"
+        android:padding="8dp"
+        android:text="Delete for Me"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/delcancelpdfreceiver"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delreceiver"
+       android:layout_gravity="right"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Cancel"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewpdfreciever"
+        android:layout_height="wrap_content"
+        android:background="@drawable/statusdelete"
+        android:layout_gravity="right"
+        android:padding="8dp"
+        android:text="View pdf"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        />
+
+
+
+
+</LinearLayout>

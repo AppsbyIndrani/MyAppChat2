@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+
+        android:title="Chats"
+        android:id="@+id/main_chats_option"
+
+        >
+    </item>
+
+    <item
+
+        android:title="Status"
+        android:id="@+id/main_status_option"
+        android:icon="@drawable/edit_status"
+
+
+        >
+    </item>
+
+    <item
+
+        android:title="Calls"
+        android:id="@+id/main_calls_option"
+        android:icon="@drawable/common_full_open_on_phone"
+
+        >
+    </item>
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupchatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/group_list_of_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@id/groupcardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/groupcardView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toStartOf="@id/groupsendmsgbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/chatlayout">
+
+            <EditText
+                android:id="@+id/groupinputtextmsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Type a message..."
+                android:inputType="textPersonName"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/chatlayout"
+                app:layout_constraintEnd_toEndOf="@id/sendfilesimageView"
+                />
+
+            <ImageView
+                android:id="@+id/groupsendfilesimageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/send_files"
+                android:tint="#00BEB8B8" />
+
+            <ImageView
+                android:id="@+id/groupimageView2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="#00817B7B"
+                android:tint="#008D8585"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <ImageButton
+        android:id="@+id/groupsendmsgbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/colorPrimary"
+        android:layout_weight="1"
+        android:src="@drawable/send_message"
+        app:layout_constraintBottom_toBottomOf="@id/groupcardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

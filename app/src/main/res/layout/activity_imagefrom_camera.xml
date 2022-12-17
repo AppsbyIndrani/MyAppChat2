@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".ImagefromCameraActivity">
+
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="26dp"
+        android:id="@+id/imagefromcamera"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_below="@id/imagefromcamera"
+        android:layout_marginTop="35dp"
+        android:textSize="10sp"
+        android:id="@+id/camerabutton"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="Take picture from camera" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="10dp"
+        android:id="@+id/sendcamerapicbutton"
+        app:tint="@color/colorPrimary"
+        android:layout_below="@id/imagefromcamera"
+        android:src="@drawable/send_message"
+        />
+
+</RelativeLayout>
